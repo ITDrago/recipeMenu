@@ -7,7 +7,6 @@ export const favoriteSlice = createSlice({
   initialState,
   reducers: {
     toogleFavorites: (state, { payload: recipe }) => {
-      console.log('hello')
       const isExists = state.some((r) => r.id === recipe.id);
 
       if (isExists){

@@ -1,10 +1,12 @@
 import RecipeItem from "./recipe-item/RecipeItem";
 import Header from "./headers/Header";
+import User from "./user/User";
 
 function App() {
   return (
     <section>
       <Header/>
+      <User/>
       <div>
         <RecipeItem
           recipe={{
