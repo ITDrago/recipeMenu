@@ -9,12 +9,14 @@ export const api = createApi({
   }),
   endpoints: (builder) => ({
     getRecipes: builder.query({
-      query: () => "/?_sort=id&_order=desc",
-      providesTags: () => [{
-        type:"Recipe",
-      }]
+      query: (seacrhTern) => `/?_sort=id&_order=desc&q=${seacrhTern}`,
+      providesTags: (seacrhTern) => [
+        {
+          type: "Recipe",
+          id: seacrhTern,
+        },
+      ],
     }),
-
   }),
 });
 
