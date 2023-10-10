@@ -23,3 +23,21 @@ button{
 button:hover{
   background-color: rgb(130, 67, 94);;
 }
+
+input{
+  background-color: rgb(235, 217, 224);
+  border: 1px solid transparent;
+  outline: none;
+  color: #222;
+  margin-bottom: 7px;
+  margin: 10px ;
+  padding: 4px 5px;
+  border-radius: 5px;
+  cursor: focus;
+  transition: border-color 0.4s ease-in-out;
+  display: block;
+}
+
+input:hover{
+  border-color: rgb(130, 67, 94);;
+}

@@ -14,7 +14,7 @@ const RecipeItem = ({ recipe }) => {
   console.log(favorites);
   return (
     <div className={styles.item}>
-      {/* // <img src="" alt="" /> */}
+      <img src={recipe.image} alt={recipe.name}  width={100} style={{borderRadius:10}}/>
       <h2>{recipe.name}</h2>
       <button onClick={() => toogleFavorites(recipe)}>
         {isExist ? "Remove from" : "Add to"} favorites
